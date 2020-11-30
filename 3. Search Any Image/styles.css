@@ -1,0 +1,50 @@
+body{
+    margin:0;
+    text-align:center;
+}
+
+.head{
+    background-color:#2e3d49;
+    padding:0.5rem;
+}
+
+.head h1{
+    color:#fff;
+}
+
+form{
+display:flex;
+}
+
+img{
+    width:100%;
+}
+
+.search{
+    display:block ;
+    width:100%;
+    background:#fff;
+    display:flex;
+    align-items: center ;
+    justify-content:space-between;
+    height:40px;
+    border-radius:18px;
+    box-sizing:border-box ;
+    padding:0 10px;
+   }
+
+#search-keyword{
+    display:block ;
+    flex-grow:1;
+    border:none;
+    font-size:18px;
+}
+
+i{
+    font-size:25px;
+    color:#2e3d49;
+}
+
+input:focus{
+    outline:none;
+};
