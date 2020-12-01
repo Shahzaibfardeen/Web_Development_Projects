@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:300&display=swap');
+
+p{
+    font-family:"Inconsolata",monospace;
+}
+.me{
+    background: url("https://api.sololearn.com/Uploads/Avatars/17202116.jpg")no-repeat center / contain;
+    width: 60px;
+    height: 60px;
+    bottom: 35px;
+    right: 16px;
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    border-radius: 50%;
+    animation: me 2s linear infinite alternate
+}
+
+@keyframes me{
+    from{
+        transform: translateY(-7px)
+    }
+
+    to{
+        transform: translateY(7px)
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Page Title</title>
+      <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="src/styles.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+  </head>
+    <body class="bg-blue-700 flex flex-col items-center justify-center py-8">
+        <div class="shadow-2xl pt-8">
+          <div class="text-white border p-8"><p class="text-5xl" id="a"></p>
+            <p class="text-lg " id="d"></p></div>
+        </div>
+        <div class="absolute flex mx-auto bottom-0">
+            <div class="text-gray-400 mb-4 text-sm"><p> Designed By - Shahzaib Fardeen </p></div>
+          </div>
+
+        <a class="me shadow-2xl" href="https://api.sololearn.com/Uploads/Avatars/17202116.jpg" target="_blank" style="color:#000"></a>
+        <script>
+        function time(){
+            let p = document.getElementById("a");
+        p.innerHTML = moment().format('LTS');
+
+        document.getElementById("d").innerHTML = moment().format('dddd')+'<br/>';
+        document.getElementById("d").innerHTML += moment().format('LL');
+        }
+        setInterval(time,1000);
+
+Swal.fire({
+  icon: 'success',
+  title: 'Upvote the Code On Github <br> If you like it.',
+  showConfirmButton: false,
+  timer: 2500
+})
+        </script>
+    </body>
+</html>
